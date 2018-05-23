@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Имя</title>
+    <script type="text/javascript">
+        function valid (form) {
+            var name = form.name.value;
+                if (name == "" || name == " ")
+                    alert("Вы не ввели свое имя")
+                else
+                    alert("Вы ввели имя: " + name);
+        }
+
+    </script>
+</head>
+<body>
+    <form name="name" id="form" >
+        <label for="name">Введите ваше имя:</label>
+        <input type="text" placeholder="Ввод..." name="name" id="name"/><br/><br/>
+        <input type="button" value="Отправить" onclick="valid(document.getElementById('form'))"/>
+        <input type="reset" value="Очистить" />
+    </form>
+</body>
+</html>
