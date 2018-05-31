@@ -31,7 +31,7 @@ questionFunc();
 
 //#4
 function loopWhile(a, b) {
-    while (b > a) {
+    while (b > a ) {
         a++;
         console.log(a);
         a++;
