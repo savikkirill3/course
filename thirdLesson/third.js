@@ -8,25 +8,20 @@ function count(str, I) {
         a++;
         pos = foundPos + 1; // продолжить поиск со следующей
     }
-    console.log(a);
     return a;
 }
 
 function pow(x, n){
-    x = Math.round(x);
-    n = Math.round(n);
-    var result = Math.pow(x, n);
-    console.log(result);
-    return result;
+    return Math.pow(Math.round(x), Math.round(n));
 }
 
 function checkingComb(str, comb){
     var str = str.toLowerCase(), comb = comb.toLowerCase();
     var pos = str.indexOf(comb, 0);
     if (pos >= 0){
-        console.log('true');
+        return true;
     } else {
-        console.log('false');
+        return false;
     }
 
 }
