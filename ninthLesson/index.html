@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>ninthLesson</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<div id = "id">
+    <div id = "container">Девятый урок</div>
+    <ol>
+        <li>Реализовать функцию getElementsById(id), который будет возвращать массив
+            тегов всех элементов на странице, у которых id равен id. Если теги в
+            массиве повторяются, удалить их повторные.
+        </li>
+        <li>
+            <p>Написать функцию whichMouseButtonPressed(), которая будет вызываться
+            каждый раз, когда человек будет нажимать что либо мышью на странице и
+                возвращать информацию, какой кнопкой мыши было нажатие.</p>
+            <ul>
+                <li>Левая кнопка мыши: “left mouse button”</li>
+                <li>Правая кнопка мыши: “right mouse button”</li>
+                <li>Средняя кнопка (колесико): “middle mouse button”</li>
+            </ul>
+        </li>
+        <li>
+            <p>Переписать функцию getElementsById(id) из первого задания,
+                которая будет работать асинхронно и возвращать promise.</p>
+            <p>Пример:</p>
+            <ul>
+                <li>getElementsById(“container”)</li>
+                <li>.then((res) => console.log(`Result: ${res}`))</li>
+                <li>.catch((err) => console.log(`Error: ${err}`));</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+<script src="firstTask.js"></script>
+<script src="secondTask.js"></script>
+</body>
+</html>
